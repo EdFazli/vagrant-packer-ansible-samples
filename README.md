@@ -7,34 +7,34 @@ AWS CI/CD Automation using tools:
 5. Terraform
 6. Ansible
 
-# INITIAL SETUP
+## INITIAL SETUP
 Description on the installation process for each tools
 
-## VAGRANT
+### VAGRANT
 
-## VISUAL STUDIO CODE + GIT
+### VISUAL STUDIO CODE + GIT
 
-## AZURE DEVOPS
+### AZURE DEVOPS
 
-## PACKER
+### PACKER
 
-## TERRAFORM
+### TERRAFORM
 
-## ANSIBLE
+### ANSIBLE
 
-# SOFTWARE DEPENDECIES
+## SOFTWARE DEPENDECIES
 
-# LATEST RELEASES
+## LATEST RELEASES
 
-# VARIABLES REFERENCES
+## VARIABLES REFERENCES
 
-# CI/CD PIPELINES
+## CI/CD PIPELINES
 Description on how to build terraform/ansible code and run the scripts.
 
-# REVIEWER
+## REVIEWER
 ITOPS person in charge to review and merge scripts to main and deploy the changes
 
-# CONTRIBUTION
+## CONTRIBUTION
 "Write a code that not only machine able to understand but human as well"
 
 1- Please do insert a comment for the changes either in git commit or code snippets
