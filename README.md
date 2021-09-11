@@ -11,10 +11,19 @@ AWS CI/CD Automation using tools:
 Description on the installation process for each tools
 
 ### VAGRANT
+Download the installer here:  
+- Vagrant: [Vagrant Installer](https://www.vagrantup.com/)
 
 ### VISUAL STUDIO CODE + GIT
-
+Download the installer here:  
+- VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/)
+- Git: [Git Installer](https://git-scm.com/)  
+  
+**Git Installation**
 ### AZURE DEVOPS
+URL Reference: 
+Project Name: AscentisITOPS
+Repository Name: TerraformAnsible_CI/CD
 
 ### PACKER
 
