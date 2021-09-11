@@ -34,10 +34,9 @@ Description on how to build terraform/ansible code and run the scripts.
 ## REVIEWER
 ITOPS person in charge to review and merge scripts to main and deploy the changes
 
-## CONTRIBUTION
-"Write a code that not only machine able to understand but human as well"
-
-Item 1 Please do insert a comment for the changes either in git commit or code snippets
-2. Please follow the standard naming/variables used
-3. Any other tools suggestion for improvement are most welcome  
-4. Happy coding!
+## CONTRIBUTING
+We are pleased for anyone who want to contribute and participate in this project which you can:
+1. Raise a [ticket for bugs and feature requests](URL) and help us verify once they are implemented 
+2. Review [source code changes](URL)
+3. Review the [documentation](URL) and make pull requests for any improvements
+**TOGETHER WE MAKE ASCENTIS BETTER**
