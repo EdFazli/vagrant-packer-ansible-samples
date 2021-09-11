@@ -19,7 +19,10 @@ Download the installer here:
 - VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/)
 - Git: [Git Installer](https://git-scm.com/)  
   
-**Git Installation**
+**Git Installation**  
+  
+**VS Code Installation**  
+  
 ### AZURE DEVOPS
 URL Reference:  
 Project Name: AscentisITOPS  
@@ -31,8 +34,12 @@ Download the installer here:
 - Packer: [Packer Installer](https://www.packer.io/)  
   
 ### TERRAFORM  
+Download the installer here:  
+- Terraform: [Terraform Installer](https://www.terraform.io/downloads.html)  
   
 ### ANSIBLE  
+Ansible installation guide:  
+- Ansible: [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW)  
   
 ## SOFTWARE DEPENDENCIES  
 Please take note on the dependencies as below  
