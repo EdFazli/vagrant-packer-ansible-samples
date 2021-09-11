@@ -34,7 +34,7 @@ Download the installer here:
 ### ANSIBLE  
   
 ## SOFTWARE DEPENDENCIES  
-Please take note on the dependencies as below:  
+Please take note on the dependencies as below  
   
 Terraform:  
 -  
