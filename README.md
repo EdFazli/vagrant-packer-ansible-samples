@@ -37,5 +37,7 @@ ITOPS person in charge to review and merge scripts to main and deploy the change
 ## CONTRIBUTION
 "Write a code that not only machine able to understand but human as well"
 
-1- Please do insert a comment for the changes either in git commit or code snippets
-2-  
+1. Please do insert a comment for the changes either in git commit or code snippets
+2. Please follow the standard naming/variables used
+3. Any other tools suggestion for improvement are most welcome  
+4. Happy coding!
