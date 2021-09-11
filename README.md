@@ -26,14 +26,21 @@ Project Name: AscentisITOPS
 Repository Name: TerraformAnsible_CI/CD  
   
 ### PACKER  
+Download the installer here:  
+- Packer: [Packer Installer](https://www.packer.io/)  
   
 ### TERRAFORM  
   
 ### ANSIBLE  
   
 ## SOFTWARE DEPENDENCIES  
+Please take note on the dependencies as below:  
   
-## LATEST RELEASES  
+Terraform:  
+-  
+  
+Ansible:  
+-  
   
 ## VARIABLES REFERENCES  
   
@@ -42,6 +49,8 @@ Description on how to build terraform/ansible code and run the scripts.
   
 ## REVIEWER  
 ITOPS person in charge to review and merge scripts to main and deploy the changes  
+  
+## LATEST RELEASES  
   
 ## CONTRIBUTING  
 We are pleased for anyone who want to contribute and participate in this project which you can:
