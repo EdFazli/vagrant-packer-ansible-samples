@@ -22,7 +22,7 @@ Description on the installation process for each tools
 
 ### ANSIBLE
 
-## SOFTWARE DEPENDECIES
+## SOFTWARE DEPENDENCIES
 
 ## LATEST RELEASES
 
