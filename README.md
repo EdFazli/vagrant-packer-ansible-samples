@@ -24,6 +24,7 @@ Download the installer here:
 URL Reference:  
 Project Name: AscentisITOPS  
 Repository Name: TerraformAnsible_CI/CD  
+Extensions: [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs  
   
 ### PACKER  
 Download the installer here:  
