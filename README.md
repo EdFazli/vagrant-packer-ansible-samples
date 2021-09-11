@@ -1,9 +1,9 @@
 # AWS CI/CD AUTOMATION 
 AWS CI/CD Automation using tools:
-1- Terraform
-2- Ansible
-3- Packer
-4- Vagrant (optional)
+1. Terraform
+2. Ansible
+3. Packer
+4. Vagrant (optional)
 
 # GETTING STARTED
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
