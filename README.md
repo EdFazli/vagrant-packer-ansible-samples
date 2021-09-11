@@ -56,7 +56,7 @@ Ansible:
 Description on how to build terraform/ansible code and run the scripts.  
   
 ## REVIEWER  
-ITOPS person in charge to review and merge scripts to main and deploy the changes  
+ITOPS person in charge to review and merge scripts to main repository and deploy the changes  
   
 ## LATEST RELEASES  
   
