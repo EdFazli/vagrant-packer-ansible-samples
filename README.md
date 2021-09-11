@@ -21,29 +21,29 @@ Download the installer here:
   
 **Git Installation**
 ### AZURE DEVOPS
-URL Reference: 
-Project Name: AscentisITOPS
-Repository Name: TerraformAnsible_CI/CD
-
-### PACKER
-
-### TERRAFORM
-
-### ANSIBLE
-
-## SOFTWARE DEPENDENCIES
-
-## LATEST RELEASES
-
-## VARIABLES REFERENCES
-
-## CI/CD PIPELINES
-Description on how to build terraform/ansible code and run the scripts.
-
-## REVIEWER
-ITOPS person in charge to review and merge scripts to main and deploy the changes
-
-## CONTRIBUTING
+URL Reference:  
+Project Name: AscentisITOPS  
+Repository Name: TerraformAnsible_CI/CD  
+  
+### PACKER  
+  
+### TERRAFORM  
+  
+### ANSIBLE  
+  
+## SOFTWARE DEPENDENCIES  
+  
+## LATEST RELEASES  
+  
+## VARIABLES REFERENCES  
+  
+## CI/CD PIPELINES  
+Description on how to build terraform/ansible code and run the scripts.  
+  
+## REVIEWER  
+ITOPS person in charge to review and merge scripts to main and deploy the changes  
+  
+## CONTRIBUTING  
 We are pleased for anyone who want to contribute and participate in this project which you can:
 1. Raise a [ticket for bugs and feature requests](URL) and help us verify once they are implemented 
 2. Review [source code changes](URL)
