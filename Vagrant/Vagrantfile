@@ -1,0 +1,7 @@
+#---Vagrant COnfiguration---#
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/8" # vagrant image
+  config.vm.hostname = "Dev-Infra_VM" # vm's name
+  config.vm.network "private_network", ip: "192.168.0.50" # static LAN IP within same subnet
+end

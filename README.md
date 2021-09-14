@@ -24,7 +24,8 @@ Prerequisite:
 2. Open PowerShell and change directory to which you want the vagrant configuration to be located  
 3. Run command > *vagrant init centos/8* (This will create vagrantfile in the directory)  
 4. Edit the vagrantfile as in the repository  
-
+5. Run command > *vagrant up* to start the VM  
+  
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
 - VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/)
