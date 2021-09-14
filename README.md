@@ -12,7 +12,18 @@ Description on the installation process for each tools
 
 ### VAGRANT
 Download the installer here:  
-- Vagrant: [Vagrant Installer](https://www.vagrantup.com/)
+- Vagrant: [Vagrant Installer](https://www.vagrantup.com/downloads)
+  
+Vagrant is a tool for managing VM environment as a code (ideal to separate development environment on your laptop)  
+  
+Prerequisite:  
+- Virtualbox: [Virtual Installer](https://www.virtualbox.org/)  
+- Vagrant Image : [CentOS/8](https://app.vagrantup.com/centos/boxes/8)  
+  
+1. Download and install Vagrant based on the version of your OS  
+2. Open PowerShell and change directory to which you want the vagrant configuration to be located  
+3. Run command > *vagrant init centos/8* (This will create vagrantfile in the directory)  
+4. Edit the vagrantfile as in the repository  
 
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
