@@ -14,9 +14,9 @@ Description on the installation process for each tools
 Download the installer here:  
 - Vagrant: [Vagrant Installer](https://www.vagrantup.com/downloads)
   
-Vagrant is a tool for managing VM environment as a code (ideal to separate development environment on your laptop)  
+**Vagrant** is a tool for managing VM environment as a code (ideal to separate development environment on your laptop)  
   
-Prerequisite:  
+Prerequisites:  
 - Virtualbox: [Virtual Installer](https://www.virtualbox.org/)  
 - Vagrant Image : [CentOS/8](https://app.vagrantup.com/centos/boxes/8)  
   
@@ -25,6 +25,8 @@ Prerequisite:
 3. Run command > *vagrant init centos/8* (This will create vagrantfile in the directory)  
 4. Edit the vagrantfile as in the repository  
 5. Run command > *vagrant up* to start the VM  
+6. To test connectivity can run ping command on the VM's private IP assigned  
+7. Run command > *vagrant ssh* to remote into the VM  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
@@ -37,8 +39,8 @@ Download the installer here:
   
 ### AZURE DEVOPS
 URL Reference:  
-Project Name: AscentisITOPS  
-Repository Name: TerraformAnsible_CI/CD  
+Project Name: **AscentisITOPS**  
+Repository Name: **TerraformAnsible_CI/CD**  
 Extensions: [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs  
   
 ### PACKER  
