@@ -27,6 +27,7 @@ Prerequisites:
 5. Run command > *vagrant up* to start the VM  
 6. To test connectivity can run ping command on the VM's private IP assigned  
 7. Run command > *vagrant ssh* to remote into the VM  
+8. Run command > *vagrant reload* to reboot or update the new configuration  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
