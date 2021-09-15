@@ -32,7 +32,7 @@ Prerequisites:
 Troubleshooting Vagrant:
 1. Error output = mount: /home/vagrant/data: unknown filesystem type 'vboxsf'
 - Run command > *vagrant plugin update vagrant-vbguest*  
-- Run command > *sudo apt-get install virtualbox-guest-x11*  
+- Run command > *yum install virtualbox-guest-x11*  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
