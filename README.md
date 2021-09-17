@@ -24,7 +24,7 @@ Any new tools suggestion/enhancement will be done on *addon* branch first before
 Git Clone:
 Using any CLI that has Git features supported (Recommend to use [Git Bash](https://git-scm.com/))  
 - In CLI, change to which directory you want the repo to be clone.  
-- Run command *git clone https://edfazli92@dev.azure.com/edfazli92/TerraformAnsible_CICD/_git/TerraformAnsible_CICD*.  
+- Run command > *git clone https://edfazli92@dev.azure.com/edfazli92/TerraformAnsible_CICD/_git/TerraformAnsible_CICD*.  
   
 **VS Code Extensions**  
 Ensure the extensions below are installed in your VS Code:  
@@ -74,6 +74,12 @@ Download the installer here:
 - Packer: [Packer Installer](https://www.packer.io/).  
   
 Installation has been done in Vagrant environment (refer ./Vagrant/vagrantfile).  
+  
+To create AMI:  
+1. Go to Packer directory.  
+2. Run command > *packer build CIS_Win2019AMI.json* (Windows)  
+               > *packer build NginxAMI.json* (Ubuntu for Nginx)  
+3.  
   
 ### TERRAFORM  
 Download the installer here:  

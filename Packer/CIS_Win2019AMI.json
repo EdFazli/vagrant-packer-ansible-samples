@@ -1,0 +1,15 @@
+{
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "profile": "AWS-EdFazli",
+            "region": "ap-southeast-1",
+            "ami_name": "CIS_Win2019_AMI",
+            "ami_description": "CIS-Hardened-Level1 Windows 2019 AMI",
+            "source_ami": "ami-0d694fc7ea154072a",
+            "instance_type": "t2.micro",
+            "winrm_username": "Administrator"
+        }
+    ]
+
+}
