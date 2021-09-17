@@ -28,13 +28,16 @@ Prerequisites:
 6. Run command > *vagrant up* to start the VM  
 7. To test connectivity can run ping command on the VM's private IP assigned  
 8. Run command > *vagrant ssh* to remote into the VM  
-9. Run command > *vagrant reload* to reboot or update the new configuration  
+9. Run command > *vagrant halt* and *vagrant up* to reboot or update the new configuration  
   
 Troubleshooting Vagrant:
 1. Error output = mount: /home/vagrant/data: unknown filesystem type 'vboxsf'  
 - Run command > *vagrant plugin update vagrant-vbguest*  
 2. Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).  
 - Go to Device Manager and search for your VirtualBox Host-Only Adaptor. Then disable and enable it back  
+3. Stderr: VBoxManage.exe: error: The VM session was closed before any attempt to power it on
+VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component SessionMachine, interface ISession  
+- Open Task Manager and right-click on Virtual Box Headless Frontend session. Then cleck end task  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
