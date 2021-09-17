@@ -16,7 +16,7 @@ Download the installer here:
 - Git: [Git Installer](https://git-scm.com/).  
   
 **Git Setup**  
-For ITOPS, we will be having a total of 3 branches (1 main + 2 branches).  
+-- For ITOPS, we will be having a total of 3 branches (1 main + 2 branches).  
 Main branch is the only one that will be used to deploy the infrastructure into the AWS environment (SIT/UAT/PROD) with approval.  
 Daily development will use the dev branch.  
 Any new tools suggestion/enhancement will be done on feature branch first before merge to dev branch.  
