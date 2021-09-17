@@ -10,6 +10,7 @@ yum -y install terraform
 yum -y install epel-release
 yum update -y
 yum -y install ansible
+yum install python-argcomplete
 SCRIPT
 
 Vagrant.configure("2") do |config|
