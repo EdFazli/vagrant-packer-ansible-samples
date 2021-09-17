@@ -64,7 +64,7 @@ VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component SessionMachi
 - Open Task Manager and right-click on Virtual Box Headless Frontend session. Then click end task.  
   
 ### AZURE DEVOPS
-URL Reference:  
+URL Reference: https://dev.azure.com/edfazli92/_git/TerraformAnsible_CICD.  
 Project Name: **AscentisITOPS**.  
 Repository Name: **TerraformAnsible_CI/CD**.  
 Extensions: [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs.  
@@ -73,13 +73,19 @@ Extensions: [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-d
 Download the installer here:  
 - Packer: [Packer Installer](https://www.packer.io/).  
   
+Installation has been done in Vagrant environment (refer ../Vagrant/vagrantfile).  
+  
 ### TERRAFORM  
 Download the installer here:  
 - Terraform: [Terraform Installer](https://www.terraform.io/downloads.html).  
   
+Installation has been done in Vagrant environment (refer ../Vagrant/vagrantfile).  
+  
 ### ANSIBLE  
 Ansible installation guide:  
 - Ansible: [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW).  
+  
+Installation has been done in Vagrant environment (refer ../Vagrant/vagrantfile).  
   
 ## SOFTWARE DEPENDENCIES  
 Please take note on the dependencies as below.  
