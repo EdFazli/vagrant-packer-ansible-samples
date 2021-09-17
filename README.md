@@ -16,14 +16,24 @@ Download the installer here:
 - Git: [Git Installer](https://git-scm.com/).  
   
 **Git Setup**  
--- For ITOPS, we will be having a total of 3 branches (1 main + 2 branches).  
-Main branch is the only one that will be used to deploy the infrastructure into the AWS environment (SIT/UAT/PROD) with approval.  
-Daily development will use the dev branch.  
-Any new tools suggestion/enhancement will be done on feature branch first before merge to dev branch.  
+For ITOPS, we will be having a total of 3 branches (1 main + 2 branches).  
+*Main* branch is the only one that will be used to deploy the infrastructure into the AWS environment (SIT/UAT/PROD) with approval.  
+Daily development will use the *dev* branch.  
+Any new tools suggestion/enhancement will be done on *addon* branch first before merge to *dev* branch.  
+  
+Git Clone:
+Using any CLI that has Git features supported (Recommend to use [Git Bash](https://git-scm.com/))  
+- In CLI, change to which directory you want the repo to be clone.  
+- Run command *git clone https://edfazli92@dev.azure.com/edfazli92/TerraformAnsible_CICD/_git/TerraformAnsible_CICD*.  
   
 **VS Code Extensions**  
+Ensure the extensions below are installed in your VS Code:  
+1. [Hashicorp Terraform](hashicorp.terraform).
+2. [Python](ms-python.python).
+3. [YAML](redhat.vscode-yaml).
+4. [JSON](zainchen.json).
+5. [Ansible](tomaciazek.ansible).
   
-
 ### VAGRANT
 Download the installer here:  
 - Vagrant: [Vagrant Installer](https://www.vagrantup.com/downloads).
