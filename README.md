@@ -33,6 +33,8 @@ Prerequisites:
 Troubleshooting Vagrant:
 1. Error output = mount: /home/vagrant/data: unknown filesystem type 'vboxsf'  
 - Run command > *vagrant plugin update vagrant-vbguest*  
+2. Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).  
+- Go to Device Manager and search for your VirtualBox Host-Only Adaptor. Then disable and enable it back  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
