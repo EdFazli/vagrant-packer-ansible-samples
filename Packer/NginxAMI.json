@@ -1,0 +1,31 @@
+{
+   
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "shared_credentials_file": "~/.aws/credentials",
+            "profile": "default",
+            "region": "ap-southeast-1",
+            "ami_name": "Ubuntu_Nginx_AMI",
+            "ami_description": "Ubuntu for Nginx AMI",
+            "source_ami_filter": {
+                "filters": {
+                  "virtualization-type": "hvm",
+                  "name": "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64*",
+                  "root-device-type": "ebs"
+                },
+                "most_recent": true,
+                "owners": "099720109477"
+              },
+            "instance_type": "t2.micro",
+            "ssh_username": "ubuntu",
+            "tags": {
+                "Name": "Ubuntu_Nginx_AMI",
+                "OS_Version": "Ubuntu Server 20.04 LTS",
+                "Release": "Latest",
+                "Base_AMI_Name": "{{ .SourceAMIName }}"
+              }
+        }
+    ]
+
+}

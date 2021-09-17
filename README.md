@@ -68,11 +68,9 @@ VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component SessionMachi
 Installing AWS CLIv2 in /home directory:
 1. Run command > *sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"*.  
 2. Run command > *sudo unzip awscliv2.zip*.  
-3. Run command > *sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin*.  
-4. Run command > *vim ~/.bashrc*.
-5. Insert *export PATH=$PATH:/usr/local/bin*. Then save and exit.  
-6. Restart vagrant.  
-
+3. Run command > *sudo ./aws/install -i /usr/local/aws-cli -b /usr/bin*.  
+4. Run command > *aws configure*.  
+    
 CLI Credentials and Config File Location:
 - CLI Config: ~/.aws/config  
 - CLI Credentials: ~/.aws/credentials  
