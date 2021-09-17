@@ -1,14 +1,24 @@
 # AWS CI/CD AUTOMATION 
 AWS CI/CD Automation using tools:
-1. Vagrant
-2. Visual Studio Code + Git
+1. Visual Studio Code + Git
+2. Vagrant
 3. Azure DevOps
 4. Packer
 5. Terraform
 6. Ansible
 
 ## INITIAL SETUP
-Description on the installation process for each tools
+Description on the installation process for each tools  
+  
+### VISUAL STUDIO CODE + GIT
+Download the installer here:  
+- VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/)
+- Git: [Git Installer](https://git-scm.com/)  
+  
+**Git Setup**  
+  
+**VS Code Extensions**  
+  
 
 ### VAGRANT
 Download the installer here:  
@@ -38,15 +48,6 @@ Troubleshooting Vagrant:
 3. Stderr: VBoxManage.exe: error: The VM session was closed before any attempt to power it on
 VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component SessionMachine, interface ISession  
 - Open Task Manager and right-click on Virtual Box Headless Frontend session. Then cleck end task  
-  
-### VISUAL STUDIO CODE + GIT
-Download the installer here:  
-- VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/)
-- Git: [Git Installer](https://git-scm.com/)  
-  
-**Git Installation**  
-  
-**VS Code Installation**  
   
 ### AZURE DEVOPS
 URL Reference:  
