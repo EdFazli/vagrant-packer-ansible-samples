@@ -24,16 +24,15 @@ Prerequisites:
 2. Open PowerShell and change directory to which you want the vagrant configuration to be located  
 3. Run command > *vagrant init centos/8* (This will create vagrantfile in the directory)  
 4. Edit the vagrantfile as in the repository  
-5. Run command > *vagrant up* to start the VM  
-6. To test connectivity can run ping command on the VM's private IP assigned  
-7. Run command > *vagrant ssh* to remote into the VM  
-8. Run command > *vagrant reload* to reboot or update the new configuration  
+5. Run command > *vagrant plugin install vagrant-vbguest*  
+6. Run command > *vagrant up* to start the VM  
+7. To test connectivity can run ping command on the VM's private IP assigned  
+8. Run command > *vagrant ssh* to remote into the VM  
+9. Run command > *vagrant reload* to reboot or update the new configuration  
   
 Troubleshooting Vagrant:
-1. Error output = mount: /home/vagrant/data: unknown filesystem type 'vboxsf'
-- Run command > *vagrant plugin install vagrant-vbguest*
+1. Error output = mount: /home/vagrant/data: unknown filesystem type 'vboxsf'  
 - Run command > *vagrant plugin update vagrant-vbguest*  
-- Run command > *yum install virtualbox-guest-x11*  
   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
