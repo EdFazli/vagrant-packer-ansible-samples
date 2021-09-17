@@ -4,6 +4,7 @@ $software_install = <<SCRIPT
 sudo su
 yum update -y
 yum install -y yum-utils
+yum install -y unzip vim
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 yum -y install packer
 yum -y install terraform

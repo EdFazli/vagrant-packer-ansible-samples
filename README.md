@@ -2,14 +2,15 @@
 AWS CI/CD Automation using tools:
 1. Visual Studio Code + Git
 2. Vagrant
-3. Azure DevOps
-4. Packer
-5. Terraform
-6. Ansible
+3. AWS CLI
+4. Azure DevOps
+5. Packer
+6. Terraform
+7. Ansible
 
 ## INITIAL SETUP
 Description on the installation process for each tools.  
-  
+   
 ### VISUAL STUDIO CODE + GIT
 Download the installer here:  
 - VS Code: [Visual Studio Code Installer](https://code.visualstudio.com/).
@@ -63,6 +64,19 @@ Troubleshooting Vagrant:
 VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component SessionMachine, interface ISession.  
 - Open Task Manager and right-click on Virtual Box Headless Frontend session. Then click end task.  
   
+### AWS CLI
+Installing AWS CLIv2 in /home directory:
+1. Run command > *sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"*.  
+2. Run command > *sudo unzip awscliv2.zip*.  
+3. Run command > *sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin*.  
+4. Run command > *vim ~/.bashrc*.
+5. Insert *export PATH=$PATH:/usr/local/bin*. Then save and exit.  
+6. Restart vagrant.  
+
+CLI Credentials and Config File Location:
+- CLI Config: ~/.aws/config  
+- CLI Credentials: ~/.aws/credentials  
+  
 ### AZURE DEVOPS
 URL Reference: https://dev.azure.com/edfazli92/_git/TerraformAnsible_CICD.  
 Project Name: **AscentisITOPS**.  
@@ -77,9 +91,9 @@ Installation has been done in Vagrant environment (refer ./Vagrant/vagrantfile).
   
 To create AMI:  
 1. Go to Packer directory.  
-2. Run command > *packer build CIS_Win2019AMI.json* (Windows)  
-               > *packer build NginxAMI.json* (Ubuntu for Nginx)  
-3.  
+2. Run command > *packer build CIS_Win2019AMI.json* (Windows) or
+3. Run command > *packer build NginxAMI.json* (Ubuntu for Nginx)  
+4.  
   
 ### TERRAFORM  
 Download the installer here:  
