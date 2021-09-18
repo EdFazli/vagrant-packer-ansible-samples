@@ -1,13 +1,20 @@
 {
+    "variables": {
+            "region":"ap-southeast-1",
+            "ami_name": "CIS_Win2019_AMI",
+            "ami_description": "CIS-Hardened-Level1 Windows 2019 AMI",
+            "access_key": "",
+            "secret_key": ""
+    },
 
     "builders": [
         {
             "type": "amazon-ebs",
-            "shared_credentials_file": "~/.aws/credentials",
-            "profile": "default",
-            "region": "ap-southeast-1",
-            "ami_name": "CIS_Win2019_AMI",
-            "ami_description": "CIS-Hardened-Level1 Windows 2019 AMI",
+            "access_key": "{{user `access_key`}}",
+            "secret_key": "{{user `secret_key`}}",
+            "region": "{{user `region`}}",
+            "ami_name": "{{user `ami_name`}}",
+            "ami_description": "{{user `ami_description`}}",
             "source_ami_filter": {
                 "filters": {
                   "virtualization-type": "hvm",
@@ -25,11 +32,18 @@
             "winrm_username": "Administrator",
             "winrm_use_ssl": true,
             "tags": {
-                "Name": "CIS_Win2019_AMI",
+                "Name": "{{user `ami_name`}}",
                 "OS_Version": "CIS-Windows2019",
                 "Release": "Latest",
                 "Base_AMI_Name": "{{ .SourceAMIName }}"
               }
+        }
+    ],
+
+    "post-processors": [
+        {
+            "type": "manifest",
+            "output": "{{user `ami_name`}}_out.json"
         }
     ]
 
