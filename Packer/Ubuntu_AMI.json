@@ -8,6 +8,8 @@
           "secret_key": ""
     },
 
+    "sensitive-variables": ["access_key", "secret_key"],
+    
     "builders": [
         {
             "type": "amazon-ebs",
