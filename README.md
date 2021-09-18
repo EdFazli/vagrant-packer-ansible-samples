@@ -89,9 +89,8 @@ Installation has been done in Vagrant environment (refer ./Vagrant/vagrantfile).
   
 To create AMI:  
 1. Go to Packer directory.  
-2. Run command > *packer build CIS_Win2019AMI.json* (Windows) or
-3. Run command > *packer build NginxAMI.json* (Ubuntu for Nginx)  
-4.  
+2. Run command > *packer build CIS_Windows_AMI.json* (Windows) or
+3. Run command > *packer build Ubuntu_AMI.json* (Ubuntu for Nginx)  
   
 ### TERRAFORM  
 Download the installer here:  
