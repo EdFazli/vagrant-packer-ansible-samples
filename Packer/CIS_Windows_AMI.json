@@ -37,6 +37,7 @@
                 "Name": "{{user `ami_name`}}",
                 "OS_Version": "CIS-Windows2019",
                 "Release": "Latest",
+                "Base_AMI_ID": "{{ .SourceAMI }}}",
                 "Base_AMI_Name": "{{ .SourceAMIName }}"
               }
         }
