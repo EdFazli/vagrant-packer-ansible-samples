@@ -41,8 +41,8 @@
 
     "provisioners": [
         {
-            "type": "shell",
-            "inline": ["sleep 30", "sudo apt update -y", "sudo apt install nginx -y"]
+            "type": "ansible",
+            "playbook_file": "../Ansible/ubuntuAMI.yml"
         }
     ],
 
