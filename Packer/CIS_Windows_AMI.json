@@ -46,7 +46,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "../Ansible/windowsAMI.yml"
+            "playbook_file": "../Ansible/AMI/windowsAMI.yml"
         }
     ],
 
