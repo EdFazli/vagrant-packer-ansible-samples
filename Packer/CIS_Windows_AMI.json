@@ -1,6 +1,6 @@
 {
     "variables": {
-            "region":"ap-southeast-1",
+            "region":"",
             "ami_name": "CIS_Win2019_AMI",
             "ami_description": "CIS-Hardened-Level1 Windows 2019 AMI",
             "access_key": "",
