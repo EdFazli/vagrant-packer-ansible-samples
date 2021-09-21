@@ -1,34 +1,26 @@
 ---
-  - name: Nginx Deployment Playbook
-    hosts: 'all'
+  - hosts: "all"
     become: yes
-    become method: sudo
     tasks:
-      - name: Add EPEL repository
-        yum:
-          name: epel-release
-          state: present
 
       - name: Update  all packages
-        yum:
-          name: "*"
+        apt:
+          update_cache: true
+          cache_valid_time: 3600
           state: latest
 
       - name: Install basic packages
-        yum:
-          name: ['epel-release', 'firewalld', 'vim', 'bash completion', 'tree', 'wget', 'curl']
+        apt:
+          name: ['firewalld', 'vim', 'tree', 'wget', 'curl']
           state: present
 
       - name: Install Nginx
-        yum:
+        apt:
           name: "nginx"
           state: present
-          args:
-            create: usr/local/nginx
 
       - name: Start and enable Nginx
-        yum:
-          daemon reload: yes
+        service:
           name: nginx
           state: started
           enabled: yes
