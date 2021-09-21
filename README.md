@@ -77,7 +77,7 @@ CLI Credentials and Config File Location:
   
 ### AZURE DEVOPS
 URL Reference: https://dev.azure.com/edfazli92/_git/TerraformAnsible_CICD.  
-Project Name: **AscentisITOPS**.  
+Project Name: **TerraformAnsible_CI/CD**.  
 Repository Name: **TerraformAnsible_CI/CD**.  
 Extensions:  
 - [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs.  
