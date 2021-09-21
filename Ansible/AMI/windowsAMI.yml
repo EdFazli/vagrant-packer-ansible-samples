@@ -1,2 +1,85 @@
 ---
   - hosts: "all"
+    become: yes
+    tasks:
+
+      - name: Ensure user Admin is present
+        community.windows.win_user_profile:
+          name: Admin
+          username: Admin
+          password: "{{adminPassword}}"
+          state: present
+          groups:
+            - Administrators
+
+      - name: "Disable firewall profile"
+        community.windows.win_firewall:
+          state: disabled
+          profiles:
+            - Domain
+            - Private 
+            - Public
+      
+      - name: "Add custom firewall rule"
+        win_firewall_rule:
+          name: "Any-Any"
+          localport: "any"
+          action: "allow"
+          direction: "in"
+          protocol: "any"
+          profiles: "Domain,Public,Private"
+          state: present
+          enabled: yes
+
+      - name: "Set Time Zone"
+        community.windows.win_timezone:
+          timezone: "Singapore Standard Time"
+
+      - name: "Configuring Remote Desktop registry"
+        win_regedit:
+          path: HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server
+          name: "fDenyTSConnections"
+          data: 0
+
+      - name: "Configuring Remote Desktop registry"
+        win_regedit:
+          path: HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStation\RDP-Tcp
+          name: "UserAuthentication"
+          data: 1
+
+      - name: Install IIS Web-Server with sub features and management tools
+        win_feature:
+          name: Web-Server
+          state: present
+          include_sub_features: yes
+          include_management_tools: yes
+        register: win_feature
+
+      - name: reboot if installing Web-Server feature requires it
+        win_reboot:
+        when: win_feature.reboot_required
+
+      - name: Add a powershell module
+        win_psmodule:
+          name: PSWindowsUpdate
+          state: present
+
+      - name: Install multiple packages using Chocolatey
+        win_chocolatey:
+          name:
+          - notepadplusplus
+          - microsoft-edge
+          - 7-zip
+          - dotnetfx
+          - octopusdeploy.tentacle
+          - newrelic-dotnet
+          - awscli
+          - dotnetcore-2.1-windowshosting
+          - dotnetcore-2.2-windowshosting
+          - dotnetcore-3.0-windowshosting
+          - dotnetcore-3.1-windowshosting
+          - dotnetcore-5.0-windowshosting
+          - webpi
+          - freefilesync
+          - winmerge
+          state: present
