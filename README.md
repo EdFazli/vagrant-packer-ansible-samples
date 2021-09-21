@@ -79,8 +79,11 @@ CLI Credentials and Config File Location:
 URL Reference: https://dev.azure.com/edfazli92/_git/TerraformAnsible_CICD.  
 Project Name: **AscentisITOPS**.  
 Repository Name: **TerraformAnsible_CI/CD**.  
-Extensions: [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs.  
-  
+Extensions:  
+- [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) by Microsoft DevLabs.  
+- [Ansible](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-ansible&targetId=f50bb806-12a5-4271-93c0-94a1fad3241a&utm_source=vstsproduct&utm_medium=ExtHubManageList) by Microsoft.  
+- [Replace Tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens&targetId=f50bb806-12a5-4271-93c0-94a1fad3241a&utm_source=vstsproduct&utm_medium=ExtHubManageList) by Guillaume Rouchon.  
+    
 ### PACKER  
 Download the installer here:  
 - Packer: [Packer Installer](https://www.packer.io/).  
