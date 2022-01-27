@@ -1,0 +1,32 @@
+---
+  - hosts: "all"
+    become: yes
+    tasks:
+
+      - name: Update  all packages
+        apt:
+          update_cache: true
+          cache_valid_time: 3600
+          state: latest
+
+      - name: Install basic packages
+        apt:
+          name: ['firewalld', 'vim', 'tree', 'wget', 'curl']
+          state: present
+
+      - name: Install Nginx
+        apt:
+          name: "nginx"
+          state: present
+
+      - name: Start and enable Nginx
+        service:
+          name: nginx
+          state: started
+          enabled: yes
+
+      - name: Verify and check nginx version
+        command: nginx -V
+
+      - name: Check Nginx status
+        command: systemctl status nginx

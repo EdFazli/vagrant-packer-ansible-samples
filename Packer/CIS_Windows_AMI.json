@@ -1,0 +1,60 @@
+{
+    "variables": {
+            "region":"",
+            "ami_name": "CIS_Win2019_AMI",
+            "ami_description": "CIS-Hardened-Level1 Windows 2019 AMI",
+            "access_key": "",
+            "secret_key": ""
+    },
+
+    "sensitive-variables": ["access_key", "secret_key"],
+
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "access_key": "{{user `access_key`}}",
+            "secret_key": "{{user `secret_key`}}",
+            "region": "{{user `region`}}",
+            "ami_name": "{{user `ami_name`}}",
+            "ami_description": "{{user `ami_description`}}",
+            "source_ami_filter": {
+                "filters": {
+                  "virtualization-type": "hvm",
+                  "name": "Windows_Server-2019-English-Full-Base*",
+                  "root-device-type": "ebs"
+                },
+                "most_recent": true,
+                "owners": "801119661308"
+              },
+            "instance_type": "t2.micro",
+            "user_data_file": "./winrm_bootstrap.txt",
+            "communicator": "winrm",
+            "force_deregister": true,
+            "winrm_insecure": true,
+            "winrm_username": "Administrator",
+            "winrm_use_ssl": true,
+            "tags": {
+                "Name": "{{user `ami_name`}}",
+                "OS_Version": "CIS-Windows2019",
+                "Release": "Latest",
+                "Base_AMI_ID": "{{ .SourceAMI }}}",
+                "Base_AMI_Name": "{{ .SourceAMIName }}"
+              }
+        }
+    ],
+
+    "provisioners": [
+        {
+            "type": "ansible",
+            "playbook_file": "../Ansible/AMI/windowsAMI.yml"
+        }
+    ],
+
+    "post-processors": [
+        {
+            "type": "manifest",
+            "output": "{{user `ami_name`}}_out.json"
+        }
+    ]
+
+}
